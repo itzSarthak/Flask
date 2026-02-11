@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback Form{% endblock %}
+
+{% block content %}
+<h2>Send us your feedback</h2>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    <p>
+        {{ form.username.label }}<br>
+        {{ form.username(size=40) }}<br>
+        {% for error in form.username.errors %}
+            <span style="color:red;">{{ error }}</span>
+        {% endfor %}
+    </p>
+
+    <p>
+        {{ form.email.label }}<br>
+        {{ form.email(size=40) }}<br>
+        {% for error in form.email.errors %}
+            <span style="color:red;">{{ error }}</span>
+        {% endfor %}
+    </p>
+
+    <p>
+        {{ form.rating.label }}<br>
+        {{ form.rating() }}<br>
+        {% for error in form.rating.errors %}
+            <span style="color:red;">{{ error }}</span>
+        {% endfor %}
+    </p>
+
+    <p>
+        {{ form.message.label }}<br>
+        {{ form.message(rows=4, cols=40) }}<br>
+        {% for error in form.message.errors %}
+            <span style="color:red;">{{ error }}</span>
+        {% endfor %}
+    </p>
+
+    <p>{{ form.submit() }}</p>
+</form>
+
+{% endblock %}
