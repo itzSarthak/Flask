@@ -1,0 +1,119 @@
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer {
+        background: #1e293b;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header a {
+        color: #93c5fd;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main {
+        max-width: 500px;
+        margin: 40px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #1e293b;
+    }
+
+    label {
+        font-weight: 600;
+        color: #374151;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid #cbd5e1;
+        font-size: 14px;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background: #3b82f6;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+        background: #2563eb;
+    }
+
+    /* Flash messages */
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    li {
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .success {
+        background: #dcfce7;
+        color: #166534;
+        border: 1px solid #86efac;
+    }
+
+    .error {
+        background: #fee2e2;
+        color: #991b1b;
+        border: 1px solid #fca5a5;
+    }
+
+    blockquote {
+        background: #f1f5f9;
+        padding: 15px;
+        border-left: 5px solid #3b82f6;
+        border-radius: 6px;
+        font-style: italic;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 14px;
+    }
